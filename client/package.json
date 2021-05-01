@@ -10,6 +10,7 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "lint": "eslint -c .eslintrc.js --ext .ts <mySrcFolder>",
   "dependencies": {
     "@angular/animations": "~11.2.12",
     "@angular/common": "~11.2.12",
