@@ -28,7 +28,7 @@ namespace API.Data
         public async Task<IEnumerable<MemberDto>> GetMembersAsync() => await _context.Users.
                 ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
                 .ToListAsync();
-
+ 
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
